@@ -1,0 +1,98 @@
+/* this is where all of your CSS styles go */
+html,body {
+    width: 100%;
+    height: 100%;
+    font-family: Fontdiner Swanky;
+    color: darkmagenta;
+    font-size:30pt;
+    float: left;
+    margin-left: 5px;
+    letter-spacing: 10px;
+}
+
+@font-face {
+    font-family: 'fontdiner_swanky', cursive;
+    src: url("https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap");
+}
+
+
+.grid_container {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    top: 48%; /* for optical centering */
+    margin-top: -50px;
+    margin-left: -100px;}
+
+
+@keyframes l_move {
+    0%      {top: 0px; }
+    20%      {right: -25px}
+    30%      {right: -30px}
+    45%,75%     {top: 100px}
+    50%     {left: 50px}
+    60%      {left: 80px}
+    80%     {left: 90px}
+    90%     {left: 100px; top: 20px}
+    100%    {left: 120px;top: 0px}
+}
+
+.l {
+   position: relative;
+    float: left;
+    animation: l_move 5s  infinite ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes i_move {
+    0%      {top: 0px; }
+    20% {right: 15px}
+    45%,75%     {top: 25px}
+    50%     {left: 25px}
+    90%     {left: 30px}
+    100%    {left: 35px}
+}
+
+.i{
+    position: relative;
+    float: left;
+    animation: i_move 5s  infinite ease-out;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes v_move {
+    0%      {top: 0px; }
+    20% {left: -15px}
+    30%      {right: 15px}
+    45%,75%     {top: -25px}
+    50%     {left: -25px}
+    90%     {left: -30px}
+    100%    {left: -35px}
+}
+
+.v{
+    position: relative;
+    float: left;
+    animation: v_move 5s  infinite ease-out;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes e_move {
+    0%      {top: 0px; }
+    20%      {left: -25px}
+    30%      {right: 30px}
+    35%,75%     {top: -100px}
+    50%     {left: -50px}
+    60%      {left: -80px}
+    80%     {left: -90px}
+    90%     {left: -100px}
+    100%    {left: -120px}
+}
+.e {float: left;
+    position: relative;
+    animation: e_move 5s infinite ease-out;
+    animation-fill-mode: forwards;
+}
